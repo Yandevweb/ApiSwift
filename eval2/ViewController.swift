@@ -39,14 +39,6 @@ class ViewController: UIViewController {
                     self.cityLabel.text = display_location?["full"] as! String!
                     self.tempLabel.text = "Il fait : \(String(tempC)) C"
                     self.weatherLabel.text = weather
-                    /*let city = display_location?["city"]
-                    let country = display_location?["country"]
-                    let latitude = display_location?["latitude"]
-                    
-                    self.infoCity.text = city as! String?
-                    self.infoCountry.text = country as! String?
-                    self.infoLatitude.text = latitude as! String?
-                    */
                 }
             }
         }

@@ -40,6 +40,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z0m-Iv-prw">
+                                <rect key="frame" x="148" y="421" width="79" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Rechercher"/>
+                                <connections>
+                                    <segue destination="6mg-c6-HG8" kind="show" id="lH2-9l-wPU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -62,6 +70,64 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="40.799999999999997" y="42.728635682158924"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="SdN-YF-c9p">
+            <objects>
+                <viewController id="6mg-c6-HG8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LPZ-On-2C1"/>
+                        <viewControllerLayoutGuide type="bottom" id="HW3-hL-VU1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="frf-tV-P2i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NI7-qg-g5o">
+                                <rect key="frame" x="166" y="471" width="42" height="30"/>
+                                <state key="normal" title="retour"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Di1-nx-Ydl"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FcB-3G-3Ks">
+                                <rect key="frame" x="41" y="94" width="298" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VhP-0U-0ld">
+                                <rect key="frame" x="167" y="196" width="47" height="30"/>
+                                <state key="normal" title="Valider"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rechercher une ville" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0OA-pI-faO">
+                                <rect key="frame" x="110" y="44" width="155" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FcB-3G-3Ks" firstAttribute="leading" secondItem="frf-tV-P2i" secondAttribute="leadingMargin" constant="25" id="0fP-O6-3y7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VhP-0U-0ld" secondAttribute="trailing" constant="145" id="48F-fO-v1f"/>
+                            <constraint firstItem="VhP-0U-0ld" firstAttribute="leading" secondItem="NI7-qg-g5o" secondAttribute="trailing" constant="-41" id="4E6-5f-5Ti"/>
+                            <constraint firstItem="FcB-3G-3Ks" firstAttribute="top" secondItem="0OA-pI-faO" secondAttribute="bottom" constant="29" id="H9Y-cj-bsI"/>
+                            <constraint firstItem="VhP-0U-0ld" firstAttribute="top" secondItem="FcB-3G-3Ks" secondAttribute="bottom" constant="72" id="N65-mX-U1x"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NI7-qg-g5o" secondAttribute="trailing" constant="151" id="T3Q-r5-SlU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0OA-pI-faO" secondAttribute="trailing" constant="94" id="X2O-fc-d4Z"/>
+                            <constraint firstItem="VhP-0U-0ld" firstAttribute="leading" secondItem="frf-tV-P2i" secondAttribute="leadingMargin" constant="151" id="gvt-hb-Ecx"/>
+                            <constraint firstItem="0OA-pI-faO" firstAttribute="top" secondItem="LPZ-On-2C1" secondAttribute="bottom" constant="24" id="jMa-6t-O8K"/>
+                            <constraint firstItem="NI7-qg-g5o" firstAttribute="leading" secondItem="frf-tV-P2i" secondAttribute="leadingMargin" constant="150" id="ml8-2d-wlR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FcB-3G-3Ks" secondAttribute="trailing" constant="20" id="ov0-aW-VCb"/>
+                            <constraint firstItem="0OA-pI-faO" firstAttribute="leading" secondItem="frf-tV-P2i" secondAttribute="leadingMargin" constant="94" id="pTH-32-v4m"/>
+                            <constraint firstItem="HW3-hL-VU1" firstAttribute="top" secondItem="NI7-qg-g5o" secondAttribute="bottom" constant="166" id="ub7-Tg-00H"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2bV-Xz-ydF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="877.60000000000002" y="53.523238380809602"/>
         </scene>
     </scenes>
 </document>
